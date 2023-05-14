@@ -1,0 +1,9 @@
+input CreateBookInput {
+    isbn: String!
+    title: String!
+    publisher: String!
+    publishedAt: String!
+    price: Float!
+    categoryId: ID!
+    authorIds: [ID!]!
+}

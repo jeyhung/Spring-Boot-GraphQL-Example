@@ -1,0 +1,16 @@
+type Schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    getAuthors(page: Int!, size: Int!): [Author!]!
+    getBooks(page: Int!, size: Int!): [Book!]!
+    getBookById(id: String!): Book!
+    getCategories(page: Int!, size: Int!): [Category!]!
+}
+
+type Mutation {
+    createBook(book: CreateBookInput!): ID!
+    updateBook(book: UpdateBookInput!): ID
+}

@@ -1,0 +1,10 @@
+input UpdateBookInput {
+    id: ID!
+    isbn: String!
+    title: String!
+    publisher: String!
+    publishedAt: String!
+    price: Float!
+    categoryId: ID!
+    authorIds: [ID!]!
+}

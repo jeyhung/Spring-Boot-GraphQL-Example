@@ -1,0 +1,11 @@
+type Book {
+    id: ID!
+    isbn: String
+    title: String
+    publisher: String
+    publishedAt: String
+    price: String
+    category: Category
+    authors: [Author]
+    createdAt: String
+}
